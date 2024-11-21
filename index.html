@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+    <title>Webers Electrical</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- swiper js link  -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="preloader">
+        <img src="images/logo.png" alt="Webers Logo" class="preloader-logo">
+    </div>
+
+    <!-- Nav section  -->
+    <nav class="navbar d-none d-lg-flex ">
+        <div class="container my-1 nav-logo">
+               <a href="#">
+                <div class="d-flex align-items-center logo-section">
+                    <div class="me-2">
+                        <img src="images/logo.png" alt="logo">
+                    </div>
+                    <div>
+                        <p class="mb-0 h4">Webers Electrical</p>
+                    </div>
+                </div>
+               </a>
+            <div class="d-flex align-items-center gap-4">
+                <div class="d-flex align-items-center location">
+                    <div class="me-2 d-flex align-items-center">
+                        <span class="mb-0"><i class="fa-solid fa-location-dot"></i></span>
+                    </div>
+                    <div>
+                        <a href="https://maps.app.goo.gl/p3MqgpKmJd8zWUz67">
+                            <p class="mb-0">15/8 Balakumaran nagar,</p>
+                            <p class="mb-0">kolathur,chennai,600099</p>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <div class="d-flex align-items-center location">
+                        <div class="me-2 d-flex align-items-center">
+                            <span class="mb-0"><i class="fa-solid fa-mobile-screen-button"></i></span>
+                        </div>
+                        <div>
+                            <p class="mb-0">Mobile</p>
+                            <a href="tel:9944404611">9944404611</a>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="d-flex align-items-center location">
+                        <div class="me-2 d-flex align-items-center">
+                            <span class="mb-0"><i class="fa-solid fa-envelope"></i></span>
+                        </div>
+                        <div>
+                            <p class="mb-0">Email</p>
+                            <a href="mailto:info2webers@gmail.com">info2webers@gmail.com</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- sub-navbar  -->
+    <nav class="navbar navbar-expand-lg sub-nav">
+        <div class="container-fluid d-flex justify-content-between align-items-center">
+            <!-- Navbar brand/logo displayed only on small screens -->
+            <div class="d-flex align-items-center logo-section d-lg-none">
+                <div class="me-2">
+                    <img src="images/logo.png" width="20px" alt="logo">
+                </div>
+                <div>
+                   <a href="#" class="text-decoration-none"><p class="mb-0 text-white">Webers Electrical</p></a>
+                </div>
+            </div>
+
+            <!-- Toggle button aligned to the right -->
+            <button class="navbar-toggler bg-white ms-auto" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Collapsible menu -->
+            <div class="collapse navbar-collapse justify-content-center nav-links" id="navbarNavAltMarkup">
+                <div class="navbar-nav gap-2 gap-lg-5">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    <a class="nav-link" href="servicePage.html">Services</a>
+                    <a class="nav-link" href="aboutPage.html">About</a>
+                    <a class="nav-link" href="projectsPage.html">Projects</a>
+                    <a class="nav-link" href="contactPage.html">Contact Us</a>
+
+                </div>
+            </div>
+
+        </div>
+    </nav>
+
+    <!-- slider section  -->
+    <section id="slider__container">
+        <article id="article__container" class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <!-- swiper 1 -->
+                <div class="swiper-slide swiper-slide--style">
+                    <span class="container__text">
+                        <div class="container-text-content">
+                            <h2>Webers Electrical</h2>
+                            <p>Be a company committed to “ON TIME & ON BUDGET”
+                                Delivery, guaranteed performance and offering end-to-end Electrical solutions to our
+                                Customer</p>
+                        </div>
+                        <div class="container-text-btn">
+                            <a href="contactPage.html"><button>Contact Us Now</button></a>
+                        </div>
+                    </span>
+                    <img src="images/electrician-2755682_1920.jpg" alt="Slide 1" class="slide__img--img">
+                </div>
+                <!-- swiper 2 -->
+                <div class="swiper-slide swiper-slide--style">
+                    <span class="container__text">
+                        <div class="container-text-content">
+                            <h2>Solar Power</h2>
+                            <p>Power Your Home With Clean Solar Energy
+                                Good for the planet and your wallet.</p>
+                        </div>
+                        <div class="container-text-btn">
+                            <a href="contactPage.html"><button>Contact Us Now</button></a>
+                        </div>
+                    </span>
+                    <img src="images/A_Brighter_Future_Solar_for_Schools-700x500.jpg" alt="Slide 2"
+                        class="slide__img--img">
+                </div>
+                <!-- swiper 3 -->
+                <div class="swiper-slide swiper-slide--style">
+                    <span class="container__text">
+                        <div class="container-text-content">
+                            <h2>Access Control System</h2>
+                            <p>Protect what’s important to you
+                                We offer you a complete line of security software and solutions.
+                                Together, we can find the right type of protection for your building and
+                                staff.</p>
+                        </div>
+                        <div class="container-text-btn">
+                            <a href="contactPage.html"><button>Contact Us Now</button></a>
+                        </div>
+                    </span>
+                    <img src="images/access_controls.jpg" alt="Slide 3" class="slide__img--img">
+                </div>
+                <!-- swiper 4 -->
+                <div class="swiper-slide swiper-slide--style">
+                    <span class="container__text">
+                        <div class="container-text-content">
+                            <h2>Smoke Detector</h2>
+                            <p>Take timely action to safeguard your premises against potential fire
+                                hazards Get warned of potential fire and smoke threats with the smoke detector
+                                sensor.</p>
+                        </div>
+                        <div class="container-text-btn">
+                            <a href="contactPage.html"><button>Contact Us Now</button></a>
+                        </div>
+                    </span>
+                    <img src="images/fire system.webp" alt="Slide 3" class="slide__img--img">
+                </div>
+                <!-- swiper 5 -->
+                <div class="swiper-slide swiper-slide--style">
+                    <span class="container__text">
+                        <div class="container-text-content">
+                            <h2>Intelligent Security</h2>
+                            <p>Smart solutions for uncompromising, real-time security
+                                We understand your need to effectively secure your intellectual
+                                property, buildings and business.</p>
+                        </div>
+                        <div class="container-text-btn">
+                            <a href="contactPage.html"><button>Contact Us Now</button></a>
+                        </div>
+                    </span>
+                    <img src="images/cctv.webp" alt="Slide 3" class="slide__img--img">
+                </div>
+                <!-- swiper 6 -->
+                <div class="swiper-slide swiper-slide--style">
+                    <span class="container__text">
+                        <div class="container-text-content">
+                            <h2>Building Automation</h2>
+                            <p>The automation of buildings provides more comfort and efficiency in numerous
+                                areas.Discover the different areas of application here</p>
+                        </div>
+                        <div class="container-text-btn">
+                            <a href="contactPage.html"><button>Contact Us Now</button></a>
+                        </div>
+                    </span>
+                    <img src="images/home-automation.jpg" alt="Slide 3" class="slide__img--img">
+                </div>
+                <!-- swiper 7 -->
+                <div class="swiper-slide swiper-slide--style">
+                    <span class="container__text">
+                        <div class="container-text-content">
+                            <h2>Electrical Panels</h2>
+                            <p>Offering a dependable means to disconnect power for maintenance or
+                                emergency situations, enhancing electrical safety across industrial and
+                                commercial applications</p>
+                        </div>
+                        <div class="container-text-btn">
+                            <a href="contactPage.html"><button>Contact Us Now</button></a>
+                        </div>
+                    </span>
+                    <img src="images/1.jpg" alt="Slide 3" class="slide__img--img">
+                </div>
+                <!-- swiper 8 -->
+                <div class="swiper-slide swiper-slide--style">
+                    <span class="container__text">
+                        <div class="container-text-content">
+                            <h2>Public Address and Voice Alarm</h2>
+                            <p>The right message at the right time – every time!</p>
+                        </div>
+                        <div class="container-text-btn">
+                            <a href="contactPage.html"><button>Contact Us Now</button></a>
+                        </div>
+                    </span>
+                    <img src="images/voice alaram.jpg" alt="Slide 3" class="slide__img--img">
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </article>
+    </section>
+
+    <!-- Customer Service section  -->
+    <section class="container-fluid Customer-Service">
+        <div class="container d-flex flex-column flex-lg-row justify-content-between text-center py-4">
+            <div class="col-lg-8  mb-3 mb-lg-0  flex-column flex-lg-row d-flex align-items-center">
+                <span class="me-3 mb-2"><i class="fa-solid fa-phone"></i></span> <!-- Margin added to the right -->
+                <h1 class="mb-0">Call for Emergency Customer Service</h1>
+            </div>
+            <div class="col-lg-4 col-12 d-flex justify-content-center justify-content-lg-end align-items-center">
+                <a href="tel:9944404611"> <button><i class="fa-solid fa-phone"></i>Click to Call</button></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- about section  -->
+    <section class="container about-section">
+        <div class="d-flex justify-content-between flex-lg-row flex-column my-5">
+            <div class="col-lg-6">
+                <div>
+                    <h3 class="about-section-title">WHY CHOOSE Webers ?</h3>
+                </div>
+                <div class="d-flex align-content-start justify-content-start">
+                    <img src="images/0000151_commercial-electrician_700.png" alt="commercial-electrician">
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="about-section-content">
+                    <h3>WHY CHOOSE</h3>
+                    <h4>Webers</h4>
+                    <p>Established in 2015, Webers brings over seven years of experience in the electrical contract
+                        services sector, consistently providing clients with assurances of total quality. As a
+                        certified
+                        member of the electrical skills certification program, we adhere to strict requirements for
+                        workmanship, safety, and health. Operating as an independent organization, we uphold high
+                        standards to ensure every project meets our rigorous benchmarks. Our commitment to
+                        exceptional
+                        after-sales service sets us apart, driven by our dedication to hiring only the most skilled
+                        and
+                        committed electricians.</p>
+                </div>
+                <div>
+                    <ul>
+                        <li><span><i class="fa-solid fa-check"></i></span>Professionally Licensed and Insured</li>
+                        <li><span><i class="fa-solid fa-check"></i></span>Highly trained and certified personnel
+                        </li>
+                        <li><span><i class="fa-solid fa-check"></i></span>Safety and Quality First</li>
+                        <li><span><i class="fa-solid fa-check"></i></span>Proven Track Record of Delivering on Time
+                            and
+                            Within Budget</li>
+                        <li><span><i class="fa-solid fa-check"></i></span>Customer Satisfaction Guaranteed</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container-fluid Customer-Service">
+        <div class="container d-flex flex-column flex-lg-row justify-content-between text-center py-4">
+            <div class="col-lg-8  mb-3 mb-lg-0  flex-column  d-flex align-content-center align-items-lg-start">
+                <!-- <span class="me-3 mb-2"><i class="fa-solid fa-phone"></i></span> -->
+                <h1 class="mb-0">Service You Can Trust!</h1>
+                <h2>Let us know how we can help you today.</h2>
+            </div>
+            <div class="col-lg-4 col-12 d-flex justify-content-center justify-content-lg-end align-items-center">
+                <a href="https://api.whatsapp.com/send?phone=9944404611"><button><i
+                            class="fa-solid fa-calendar"></i>Schedule Service</button>
+            </div></a>
+        </div>
+    </section>
+
+    <section class="container about-section">
+        <div class="d-flex justify-content-between flex-lg-row flex-column my-5">
+            <div class="col-lg-6 order-2 order-lg-1">
+                <!-- Content first on large screens, second on small screens -->
+                <div class="about-section-content">
+                    <h3>Our Services</h3>
+                    <h4>More than electrical services</h4>
+                </div>
+                <div>
+                    <ul>
+                        <li><span><i class="fa-solid fa-check"></i></span>TNEB LT & HT Connection</li>
+                        <li><span><i class="fa-solid fa-check"></i></span>CIGE Approved</li>
+                        <li><span><i class="fa-solid fa-check"></i></span>Electrical equipment test report</li>
+                        <li><span><i class="fa-solid fa-check"></i></span>Energy audit</li>
+                        <li><span><i class="fa-solid fa-check"></i></span> Annual maintenance</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-6 order-1 order-lg-2"> <!-- Image first on small screens, second on large screens -->
+                <div class="d-flex justify-content-lg-end align-content-lg-end">
+                    <img class="about-img" src="images/istockphoto-1430150467-612x612.jpg" alt="commercial-electrician">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- number counter section  -->
+    <section class="container-fluid counter-section my-5">
+        <div class="row text-center text-container">
+            <div class="text-center mb-4">
+                <h2 class="counter-head">Our Achievements</h2>
+                <h3>Delivering excellence and trust through our services</h3>
+            </div>
+            <div class="col-md-3">
+                <h2 class="counter" data-target="150">0</h2>
+                <p>Projects Completed</p>
+            </div>
+            <div class="col-md-3">
+                <h2 class="counter" data-target="200">0</h2>
+                <p>Satisfied Clients</p>
+            </div>
+            <div class="col-md-3">
+                <h2 class="counter" data-target="300">0</h2>
+                <p>Trained Electricians</p>
+            </div>
+            <div class="col-md-3">
+                <h2 class="counter" data-target="50">0</h2>
+                <p>Years of Experience</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- company logos section  -->
+    <section class="container-fluid mt-5 mb-4">
+        <div class="text-center mb-4 logos-head">
+            <h2>Our Channel Partners</h2>
+            <p>We collaborate with trusted partners to deliver the best services</p>
+        </div>
+        <div class="logo-scroll-container">
+            <div class="logo-scroll">
+                <!-- Add all logos here once -->
+                <img src="images/company logos/logo1.png" alt="Company 1" class="partner-logo">
+                <img src="images/company logos/logo2.png" alt="Company 2" class="partner-logo">
+                <img src="images/company logos/logo3.png" alt="Company 3" class="partner-logo">
+                <img src="images/company logos/logo4.jpg" alt="Company 4" class="partner-logo">
+                <img src="images/company logos/logo5.png" alt="Company 5" class="partner-logo">
+                <img src="images/company logos/logo7.png" alt="Company 7" class="partner-logo">
+                <img src="images/company logos/logo8.webp" alt="Company 8" class="partner-logo">
+                <img src="images/company logos/logo9.jpg" alt="Company 9" class="partner-logo">
+                <img src="images/company logos/logo10.png" alt="Company 10" class="partner-logo">
+                <img src="images/company logos/logo11.jpg" alt="Company 11" class="partner-logo">
+
+                <!-- Add all logos here once -->
+                <img src="images/company logos/logo1.png" alt="Company 1" class="partner-logo">
+                <img src="images/company logos/logo2.png" alt="Company 2" class="partner-logo">
+                <img src="images/company logos/logo3.png" alt="Company 3" class="partner-logo">
+                <img src="images/company logos/logo4.jpg" alt="Company 4" class="partner-logo">
+                <img src="images/company logos/logo5.png" alt="Company 5" class="partner-logo">
+                <img src="images/company logos/logo7.png" alt="Company 7" class="partner-logo">
+                <img src="images/company logos/logo8.webp" alt="Company 8" class="partner-logo">
+                <img src="images/company logos/logo9.jpg" alt="Company 9" class="partner-logo">
+                <img src="images/company logos/logo10.png" alt="Company 10" class="partner-logo">
+                <img src="images/company logos/logo11.jpg" alt="Company 11" class="partner-logo">
+
+                <!-- Add all logos here once -->
+                <img src="images/company logos/logo1.png" alt="Company 1" class="partner-logo">
+                <img src="images/company logos/logo2.png" alt="Company 2" class="partner-logo">
+                <img src="images/company logos/logo3.png" alt="Company 3" class="partner-logo">
+                <img src="images/company logos/logo4.jpg" alt="Company 4" class="partner-logo">
+                <img src="images/company logos/logo5.png" alt="Company 5" class="partner-logo">
+                <img src="images/company logos/logo7.png" alt="Company 7" class="partner-logo">
+                <img src="images/company logos/logo8.webp" alt="Company 8" class="partner-logo">
+                <img src="images/company logos/logo9.jpg" alt="Company 9" class="partner-logo">
+                <img src="images/company logos/logo10.png" alt="Company 10" class="partner-logo">
+                <img src="images/company logos/logo11.jpg" alt="Company 11" class="partner-logo">
+
+            </div>
+        </div>
+    </section>
+
+    <!--supporting company logos section  -->
+    <section class="container-fluid mt-2 mb-4">
+        <div class="text-center mb-4 logos-head">
+            <p>Supporting customers with growth products, services & solutions</p>
+        </div>
+        <div class="logo-scroll-container">
+            <div class="logo-scroll-left">
+                <!-- Add all logos here once -->
+                <img src="images/company logos/logo13.jpeg" alt="Company 13" class="partner-logo">
+                <img src="images/company logos/logo14.webp" alt="Company 14" class="partner-logo">
+                <img src="images/company logos/logo15.png" alt="Company 15" class="partner-logo">
+                <img src="images/company logos/logo16.png" alt="Company 16" class="partner-logo">
+                <img src="images/company logos/logo17.png" alt="Company 17" class="partner-logo">
+                <img src="images/company logos/logo18.jpeg" alt="Company 18" class="partner-logo">
+                <img src="images/company logos/logo19.png" alt="Company 19" class="partner-logo">
+                <img src="images/company logos/logo20.png" alt="Company 20" class="partner-logo">
+                <img src="images/company logos/logo21.jpg" alt="Company 21" class="partner-logo">
+                <img src="images/company logos/logo22.jpg" alt="Company 22" class="partner-logo small-logo">
+                <img src="images/company logos/logo23.png" alt="Company 23" class="partner-logo small-logo">
+                <img src="images/company logos/logo24.png" alt="Company 24" class="partner-logo">
+                <img src="images/company logos/logo25.jpg" alt="Company 25" class="partner-logo small-logo">
+                <img src="images/company logos/logo26.jpg" alt="Company 26" class="partner-logo small-logo">
+                <img src="images/company logos/logo27.jpg" alt="Company 27" class="partner-logo">
+                <img src="images/company logos/logo28.png" alt="Company 28" class="partner-logo small-logo">
+                <img src="images/company logos/logo29.png" alt="Company 29" class="partner-logo">
+                <img src="images/company logos/logo30.png" alt="Company 30" class="partner-logo">
+                <img src="images/company logos/logo31.png" alt="Company 31" class="partner-logo">
+                <img src="images/company logos/logo32.jpeg" alt="Company 32" class="partner-logo">
+
+                <!-- Add all logos here once -->
+                <img src="images/company logos/logo13.jpeg" alt="Company 13" class="partner-logo">
+                <img src="images/company logos/logo14.webp" alt="Company 14" class="partner-logo">
+                <img src="images/company logos/logo15.png" alt="Company 15" class="partner-logo">
+                <img src="images/company logos/logo16.png" alt="Company 16" class="partner-logo">
+                <img src="images/company logos/logo17.png" alt="Company 17" class="partner-logo">
+                <img src="images/company logos/logo18.jpeg" alt="Company 18" class="partner-logo">
+                <img src="images/company logos/logo19.png" alt="Company 19" class="partner-logo">
+                <img src="images/company logos/logo20.png" alt="Company 20" class="partner-logo">
+                <img src="images/company logos/logo21.jpg" alt="Company 21" class="partner-logo">
+                <img src="images/company logos/logo22.jpg" alt="Company 22" class="partner-logo small-logo">
+                <img src="images/company logos/logo23.png" alt="Company 23" class="partner-logo small-logo">
+                <img src="images/company logos/logo24.png" alt="Company 24" class="partner-logo">
+                <img src="images/company logos/logo25.jpg" alt="Company 25" class="partner-logo small-logo">
+                <img src="images/company logos/logo26.jpg" alt="Company 26" class="partner-logo small-logo">
+                <img src="images/company logos/logo27.jpg" alt="Company 27" class="partner-logo">
+                <img src="images/company logos/logo28.png" alt="Company 28" class="partner-logo small-logo">
+                <img src="images/company logos/logo29.png" alt="Company 29" class="partner-logo">
+                <img src="images/company logos/logo30.png" alt="Company 30" class="partner-logo">
+                <img src="images/company logos/logo31.png" alt="Company 31" class="partner-logo">
+                <img src="images/company logos/logo32.jpeg" alt="Company 32" class="partner-logo">
+
+                <!-- Add all logos here once -->
+                <img src="images/company logos/logo13.jpeg" alt="Company 13" class="partner-logo">
+                <img src="images/company logos/logo14.webp" alt="Company 14" class="partner-logo">
+                <img src="images/company logos/logo15.png" alt="Company 15" class="partner-logo">
+                <img src="images/company logos/logo16.png" alt="Company 16" class="partner-logo">
+                <img src="images/company logos/logo17.png" alt="Company 17" class="partner-logo">
+                <img src="images/company logos/logo18.jpeg" alt="Company 18" class="partner-logo">
+                <img src="images/company logos/logo19.png" alt="Company 19" class="partner-logo">
+                <img src="images/company logos/logo20.png" alt="Company 20" class="partner-logo">
+                <img src="images/company logos/logo21.jpg" alt="Company 21" class="partner-logo">
+                <img src="images/company logos/logo22.jpg" alt="Company 22" class="partner-logo small-logo">
+                <img src="images/company logos/logo23.png" alt="Company 23" class="partner-logo small-logo">
+                <img src="images/company logos/logo24.png" alt="Company 24" class="partner-logo">
+                <img src="images/company logos/logo25.jpg" alt="Company 25" class="partner-logo small-logo">
+                <img src="images/company logos/logo26.jpg" alt="Company 26" class="partner-logo small-logo">
+                <img src="images/company logos/logo27.jpg" alt="Company 27" class="partner-logo">
+                <img src="images/company logos/logo28.png" alt="Company 28" class="partner-logo small-logo">
+                <img src="images/company logos/logo29.png" alt="Company 29" class="partner-logo">
+                <img src="images/company logos/logo30.png" alt="Company 30" class="partner-logo">
+                <img src="images/company logos/logo31.png" alt="Company 31" class="partner-logo">
+                <img src="images/company logos/logo32.jpeg" alt="Company 32" class="partner-logo">
+            </div>
+        </div>
+    </section>
+
+    <!-- testimonials section  -->
+    <section class="container-fluid Customer-Service">
+        <div class="container d-flex flex-column flex-lg-row justify-content-between  py-4">
+            <div class="col-lg-8  mb-3 mb-lg-0  flex-column  d-flex align-content-center align-items-lg-start">
+                <h1 class="mb-0">Customer Testimonial from Webers.</h1>
+            </div>
+        </div>
+    </section>
+
+    <section class="my-5">
+        <div class="text-center mb-4 logos-head">
+            <h2>What Our Clients Say</h2>
+        </div>
+        <div class="container">
+            <div class="row testimonial-container justify-content-center align-items-stretch">
+                <!-- Testimonial Card 1 -->
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-4 d-flex">
+                    <div
+                        class="testimonial-cards p-3 border rounded shadow-sm d-flex flex-column justify-content-between w-100">
+                        <div class="text-start mb-2">
+                            <img src="images/stars (1).png" alt="Stars Rating" class="img-fluid">
+                        </div>
+                        <div class="text-start ">
+                            <p>It's my pleasure to have such a good leadership quality and really a good technically
+                                sound team under WEBERS which made my dream come true in my project.Team members are
+                                really humble and polite and very neat with thier work and the workmanship.</p>
+                        </div>
+                        <div class="d-flex align-items-center mt-auto">
+                            <img src="images/unnamed (1).png" alt="User" class="me-2 user-image"
+                                style="width: 50px; height: 50px; border-radius: 50%;">
+                            <div>
+                                <h6 class="mb-0">Santhosh Kumar</h6>
+                                <small class="text-muted">Venkateswara interiors</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial Card 2 -->
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-4 d-flex">
+                    <div
+                        class="testimonial-cards p-3 border rounded shadow-sm d-flex flex-column justify-content-between w-100">
+                        <div class="text-start mb-2">
+                            <img src="images/stars (1).png" alt="Stars Rating" class="img-fluid">
+                        </div>
+                        <div class="text-start">
+                            <p>At Harvest, we do Interior works for Commercial spaces. Our Journey with Webers
+                                (Ragupathy) started 5 years back and every work of him till date is commendable.
+                                Ragupathy designs and executes the work smooth and flawless...</p>
+                        </div>
+                        <div class="d-flex align-items-center mt-auto">
+                            <img src="images/unnamed.png" alt="User" class="me-2 user-image"
+                                style="width: 50px; height: 50px; border-radius: 50%;">
+                            <div>
+                                <h6 class="mb-0">Ragunath</h6>
+                                <small class="text-muted">Harvest interior design</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial Card 3 -->
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-4 d-flex">
+                    <div
+                        class="testimonial-cards p-3 border rounded shadow-sm d-flex flex-column justify-content-between w-100">
+                        <div class="text-start mb-2">
+                            <img src="images/stars (1).png" alt="Stars Rating" class="img-fluid">
+                        </div>
+                        <div class="text-start">
+                            <p>Webers provides professional quality works on time and has wide clientele network
+                                handling big projects on time and excellent subject knowledge gives us right
+                                consultations for client requirements.</p>
+                        </div>
+                        <div class="d-flex align-items-center mt-auto">
+                            <img src="images/unnamed (2).png" alt="User" class="me-2 user-image"
+                                style="width: 50px; height: 50px; border-radius: 50%;">
+                            <div>
+                                <h6 class="mb-0">Sridhar Gopal</h6>
+                                <small class="text-muted">Balaha chemicals</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="more-review d-flex justify-content-center "
+                href="https://maps.app.goo.gl/5KHxFg2VZvGkoRzu7"><button>View All Reviews</button></a>
+        </div>
+    </section>
+
+    <!-- whatsapp contect  -->
+    <section>
+        <div class="whatsapp-icon">
+            <a href="https://api.whatsapp.com/send?phone=9944404611">
+                <img src="images/whatsapp.png" alt="">
+            </a>
+        </div>
+    </section>
+
+
+    <!-- footer section  -->
+    <footer class="text-white pt-5 pb-4 footer-container">
+        <div class="container text-center text-md-left footer-continer">
+            <div class="row text-center text-md-left">
+                <!-- Column 1: Logo & About -->
+                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <img src="images/logo.png" width="90px" alt="">
+                    <h5 class="text-uppercase mb-4 font-weight-bold">Webers Electrical</h5>
+                    <p>Your trusted partner for top-notch electrical services, dedicated to safety and excellence.
+                    </p>
+                </div>
+
+                <!-- Column 2: Quick Links -->
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3 footer-links">
+                    <h5 class="text-uppercase mb-4 font-weight-bold">Quick Links</h5>
+                    <p><a href="#">Home</a></p>
+                    <p><a href="servicePage.html">Services</a></p>
+                    <p><a href="aboutPage.html">About Us</a></p>
+                    <p><a href="projectsPage.html">Projects</a></p>
+                    <p><a href="contactPage.html">Contact</a></p>
+                </div>
+
+                <!-- Column 3: Services -->
+                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3 footer-links">
+                    <h5 class="text-uppercase mb-4 font-weight-bold">Services</h5>
+                    <p><a href="servicePage.html#Commercial">Commercial</a></p>
+                    <p><a href="servicePage.html#Industrial">Industrial</a></p>
+                    <p><a href="servicePage.html#Residential">Residential</a></p>
+                </div>
+
+                <!-- Column 4: Contact -->
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3 contact-info">
+                    <h5 class="text-uppercase mb-4 font-weight-bold">Contact</h5>
+                   <a href="https://maps.app.goo.gl/p3MqgpKmJd8zWUz67">
+                    <p><i class="fas fa-home mr-3"></i> 15/8 Balakumaran nagar,kolathur,chennai,600099</p>
+                   </a>
+                    <p><i class="fas fa-envelope mr-3"></i> <a
+                            href="mailto:info2webers@gmail.com">info2webers@gmail.com</a></p>
+                    <p><i class="fas fa-phone mr-3"></i> <a href="tel:9944404611">+91 9944404611</a></p>
+                </div>
+
+            </div>
+
+            <!-- Footer bottom row with Social Media Icons -->
+            <div class="row d-flex justify-content-center">
+                <div class="col-md-8 col-lg-8 text-center mt-3">
+                    <p>&copy; 2024 Webers Electrical. All Rights Reserved.</p>
+
+                    <!-- Social Media Links -->
+                    <div class="social-links">
+                        <a href="#" class=" me-3"><i class="fab fa-facebook fa-2x"></i></a>
+                        <a href="#" class=" me-3"><i class="fa-brands fa-whatsapp fa-2x"></i></a>
+                        <a href="#" class=" me-3"><i class="fa-brands fa-square-x-twitter fa-2x"></i></a>
+                        <a href="#" class=""><i class="fab fa-instagram fa-2x"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    </div>
+
+
+
+
+
+    <script src="script.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
