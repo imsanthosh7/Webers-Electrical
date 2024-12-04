@@ -70,3 +70,54 @@ window.onload = function () {
  },1200)
 };
 
+
+
+const popup = document.querySelector('.image-popup');
+        const popupImage = document.querySelector('#popup-image');
+        const closePopup = document.querySelector('.close-popup');
+        const prevBtn = document.querySelector('.prev');
+        const nextBtn = document.querySelector('.next');
+
+        const images = document.querySelectorAll('.clickable-image');
+        let currentIndex = 0;
+
+        // Open popup with the clicked image
+        images.forEach((image, index) => {
+            image.addEventListener('click', () => {
+                currentIndex = index;
+                showImage(currentIndex);
+                popup.style.display = 'flex';
+            });
+        });
+
+        // Close the popup
+        closePopup.addEventListener('click', () => {
+            popup.style.display = 'none';
+        });
+
+        // Close popup on clicking outside the image
+        popup.addEventListener('click', (e) => {
+            if (e.target !== popupImage && !e.target.classList.contains('navigation')) {
+                popup.style.display = 'none';
+            }
+        });
+
+        // Show the image based on the current index
+        function showImage(index) {
+            popupImage.src = images[index].src;
+        }
+
+        // Navigate to the previous image
+        prevBtn.addEventListener('click', () => {
+            currentIndex = (currentIndex - 1 + images.length) % images.length;
+            showImage(currentIndex);
+        });
+
+        // Navigate to the next image
+        nextBtn.addEventListener('click', () => {
+            currentIndex = (currentIndex + 1) % images.length;
+            showImage(currentIndex);
+        });
+
+
+        
