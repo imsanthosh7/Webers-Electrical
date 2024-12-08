@@ -44,7 +44,7 @@ body {
 }
 
 .location span i {
-    font-size: 25px;
+    font-size: 36px;
     color: var(--rt-color-primary);
     margin-right: 3px;
 }
@@ -53,13 +53,22 @@ body {
     color: var(--rt-color-primary);
     font-weight: 600;
     font-size: 13px;
+ 
 }
+
+
 
 .location a {
     text-decoration: none;
-    color: var(--rt-color-primary);
-    font-size: 15px;
-    font-weight: 600;
+    color: rgb(100, 98, 98);
+    font-size: 14px;
+    font-weight: 500;
+    transition: color 0.2s ease-in;
+}
+
+
+.location a:hover{
+    color: var(--rt-color-secondPrimary);
 }
 
 
@@ -203,7 +212,7 @@ body {
 
     }
 
-    
+
 
     .counter-head {
         font-size: 30px !important;
@@ -298,7 +307,10 @@ body {
     .project-contanier h3 {
         font-size: 1.8rem !important;
     }
-
+     
+    .image-popup img {
+        /* max-width: 78% !important; */
+    }
     /* contact section  */
 
     .contact-banner {
@@ -608,16 +620,37 @@ ul li i {
 .logo-scroll-container {
     overflow: hidden;
     white-space: nowrap;
-    width: 100%;
+    width: auto;
     position: relative;
 }
+
+
+.logo-scroll-container::before,
+.logo-scroll-container::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 100px;
+    /* Adjust the width of the gradient */
+    height: 100%;
+    z-index: 1;
+}
+
+.logo-scroll-container::before {
+    left: 0;
+    background: linear-gradient(to right, white, transparent);
+}
+
+.logo-scroll-container::after {
+    right: 0;
+    background: linear-gradient(to left, white, transparent);
+}
+
 
 .logo-scroll {
     display: flex;
     align-items: center;
-
-    gap: 20px;
-    /* Space between logos */
+    gap: 40px;
     animation: scrollRight 23s linear infinite;
 }
 
@@ -647,7 +680,7 @@ ul li i {
     display: flex;
     align-items: center;
 
-    gap: 30px;
+    gap: 40px;
     /* Space between logos */
     animation: scrollLeft 23s linear infinite;
 }
@@ -788,18 +821,21 @@ ul li i {
     right: 20px;
     z-index: 1100;
 
+
 }
 
 .whatsapp-icon img {
     width: 60px;
     height: auto;
     cursor: pointer;
+    transition: all 0.2s ease-in-out;
+
+
 
 }
 
 .whatsapp-icon img:hover {
-    transform: scale(1.06);
-    transition: all 0.2s ease-in-out;
+    transform: scale(1.08);
 }
 
 
@@ -1034,12 +1070,12 @@ ul li i {
 .project-text img {
     border-radius: 8px;
     box-shadow: 0 4px 8px #7272721a;
+    transition: all 0.3s ease-in-out;
 
 }
 
 .project-text img:hover {
-    transform: scale(1.02);
-    transition: all 0.3s ease-out;
+    transform: scale(1.03);
     cursor: pointer;
 }
 
@@ -1100,16 +1136,23 @@ ul li i {
     top: 20px;
     right: 20px;
     color: #fff;
-    font-size: 34px;
+    font-size: 30px;
     font-weight: 600;
     cursor: pointer;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    padding-bottom: 4px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    transition: all 0.2s ease-in;
 }
 
 .close-popup:hover {
-    transition: color 0.2s ease-in;
-    color: var(--rt-color-secondPrimary);
-
+    background-color: rgb(142, 142, 142);
 }
+
 
 /* Keyframes for the background fade-in */
 @keyframes fadeIn {
@@ -1139,17 +1182,24 @@ ul li i {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    font-size: 36px;
+    font-size: 32px;
     color: white;
     font-weight: 500;
     cursor: pointer;
     user-select: none;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    padding-bottom: 4px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    transition: all 0.2s ease-in;
 }
 
 .navigation:hover {
-    transition: color 0.2s ease-in;
-    color: var(--rt-color-secondPrimary);
 
+    background-color: rgb(142, 142, 142);
 }
 
 .navigation.prev {
@@ -1276,4 +1326,32 @@ ul li i {
 }
 
 
+.go-to-top {
+    position: fixed;
+    z-index: 1000;
+    bottom: 20px;
+    left: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: var(--rt-color-primary);
+    color: white;
+    font-size: 24px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
 
+.go-to-top i {
+    font-size: 20px;
+}
+
+.go-to-top:hover {
+    background-color: #005f7f;
+    transform: scale(1.1);
+    /* Slightly larger on hover */
+}

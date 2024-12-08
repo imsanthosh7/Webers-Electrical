@@ -1,3 +1,25 @@
+// Go to Top button
+const goToTopButton = document.getElementById('go-to-top');
+
+
+window.addEventListener('scroll', () => {
+    if (window.scrollY > 300) {
+        goToTopButton.style.display = 'flex';
+    } else {
+        goToTopButton.style.display = 'none';
+    }
+});
+
+goToTopButton.addEventListener('click', () => {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth' 
+    });
+});
+
+
+// navlink active 
+
 document.querySelectorAll('.nav-link').forEach(link => {
   link.addEventListener('click', function () {
     document.querySelectorAll('.nav-link').forEach(l => l.classList.remove('active-custom'));
@@ -5,6 +27,8 @@ document.querySelectorAll('.nav-link').forEach(link => {
   });
 });
 
+
+// swiper 
 
 document.addEventListener("DOMContentLoaded", function () {
   var swiper = new Swiper(".mySwiper", {
@@ -53,6 +77,7 @@ function animateCounters() {
   });
 }
 
+
 // Scroll event listener for triggering animation
 function handleScroll() {
   const section = document.querySelector('.counter-section');
@@ -69,8 +94,9 @@ function handleScroll() {
 }
 window.addEventListener('scroll', handleScroll);
 
-// preloder 
 
+
+// preloder 
 window.onload = function () {
   const preloader = document.getElementById('preloader');
   setTimeout(() => {
@@ -144,3 +170,8 @@ images.forEach((image, index) => {
 closePopup.addEventListener('click', () => {
   popup.classList.remove('show');
 });
+
+
+
+
+
