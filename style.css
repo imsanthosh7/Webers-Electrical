@@ -7,6 +7,11 @@
     scroll-behavior: smooth;
 }
 
+@font-face {
+    font-family: logofont;
+    src: url(IBM-Logo.ttf);
+}
+
 body {
     font-family: "Inter", sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     background: #ffffff;
@@ -38,8 +43,11 @@ body {
 
 .logo-section p {
     color: var(--rt-color-primary);
-    font-weight: 600;
-    font-size: 25px;
+    font-weight: 500;
+    font-family: logofont !important;
+    font-size: 26px;
+    line-height: 16px;
+    margin-top: 5px ;
 
 }
 
@@ -175,11 +183,15 @@ body {
 
 @media (max-width: 768px) {
 
+    .logo-section p{
+        font-size: 22px !important;
+    }
     .container-text-content {
         width: 100%;
         max-width: 360px;
         margin: 0 auto;
     }
+
 
     .container__text h2 {
         font-size: 2rem !important;
@@ -779,6 +791,11 @@ ul li i {
 
 .footer-container {
     background-color: #001119;
+}
+
+.footer-logo h5{
+   font-family: logofont;
+   font-weight: 500;
 }
 
 .footer-container a {
