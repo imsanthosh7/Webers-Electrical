@@ -3,18 +3,18 @@ const goToTopButton = document.getElementById('go-to-top');
 
 
 window.addEventListener('scroll', () => {
-    if (window.scrollY > 300) {
-        goToTopButton.style.display = 'flex';
-    } else {
-        goToTopButton.style.display = 'none';
-    }
+  if (window.scrollY > 300) {
+    goToTopButton.style.display = 'flex';
+  } else {
+    goToTopButton.style.display = 'none';
+  }
 });
 
 goToTopButton.addEventListener('click', () => {
-    window.scrollTo({
-        top: 0,
-        behavior: 'smooth' 
-    });
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
 });
 
 
