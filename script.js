@@ -106,72 +106,94 @@ window.onload = function () {
 
 
 
-// servicePage image popup
+// project image popUp
 
-const popup = document.querySelector('.image-popup');
-const popupImage = document.querySelector('#popup-image');
-const closePopup = document.querySelector('.close-popup');
-const prevBtn = document.querySelector('.prev');
-const nextBtn = document.querySelector('.next');
+const lightbox = document.getElementById('lightbox');
+const lightboxGroup = document.getElementById('lightbox-group');
+const closeBtn = document.getElementById('close-btn');
+const prevBtn = document.getElementById('prev-btn');
+const nextBtn = document.getElementById('next-btn');
+const galleryItems = document.querySelectorAll('.gallery-item');
 
-const images = document.querySelectorAll('.clickable-image');
+let currentGroup = [];
 let currentIndex = 0;
 
-// Open popup with the clicked image
-images.forEach((image, index) => {
-  image.addEventListener('click', () => {
-    currentIndex = index;
-    showImage(currentIndex);
-    popup.style.display = 'flex';
+// Predefined groups of images
+const groups = {
+  1: ['images/industrial-1.jpg', 'images/industrial-2.jpg', 'images/industrial-3.jpg',
+    'images/industrial-4.jpg', 'images/industrial-5.jpg', 'images/industrial-6.jpg',
+    'images/industrial-7.jpg', 'images/industrial-8.jpg', 'images/industrial-9.jpg',
+    'images/industrial-10.jpg',
+  ],
+  2: ['images/residential-1.jpg', 'images/residential-2.jpg', 'images/residential-3.jpg',
+    'images/residential-4.jpg', 'images/residential-5.jpg', 'images/residential-6.jpg',
+    'images/residential-7.jpg', 'images/residential-8.jpg', 'images/residential-9.jpg',
+    'images/residential-10.jpg', 'images/residential-11.jpg', 'images/residential-12.jpg',
+  ],
+  3: ['images/commercial-1.jpg', 'images/commercial-2.jpg', 'images/commercial-3.jpg',
+    'images/commercial-4.jpg', 'images/commercial-5.jpg', 'images/commercial-6.jpg',
+    'images/commercial-7.jpg', 'images/commercial-8.jpg', 'images/commercial-9.jpg',
+    'images/commercial-10.jpg', 'images/commercial-11.jpg', 'images/commercial-1.jpg',
+    'images/commercial-12.jpg', 'images/commercial-13.jpg', 'images/commercial-14.jpg',
+    'images/commercial-15.jpg', 'images/commercial-16.jpg', 'images/commercial-17.jpg',
+    'images/commercial-18.jpg'
+  ],
+};
+
+// Open lightbox on image click
+galleryItems.forEach((item) => {
+  item.addEventListener('click', () => {
+    const groupId = item.getAttribute('data-group');
+    currentGroup = groups[groupId];
+    currentIndex = 0; // Start with the first image of the group
+    showCurrentImage();
+    lightbox.style.display = 'flex';
   });
 });
 
-// Close the popup
-closePopup.addEventListener('click', () => {
-  popup.style.display = 'none';
+// Close lightbox
+closeBtn.addEventListener('click', () => {
+  lightbox.style.display = 'none';
 });
 
+// Show the current image
+function showCurrentImage() {
+  lightboxGroup.innerHTML = ''; // Clear existing content
 
-// Close popup on clicking outside the image
-popup.addEventListener('click', (e) => {
-  if (e.target !== popupImage && !e.target.classList.contains('navigation')) {
-    popup.style.display = 'none';
+  const img = document.createElement('img');
+  img.src = currentGroup[currentIndex];
+  img.alt = `Image ${currentIndex + 1}`;
+  img.classList.add('lightbox-image');
+  lightboxGroup.appendChild(img);
+}
+
+// Show next image
+nextBtn.addEventListener('click', () => {
+  currentIndex = (currentIndex + 1) % currentGroup.length; 
+  showCurrentImage();
+});
+
+// Show previous image
+prevBtn.addEventListener('click', () => {
+  currentIndex = (currentIndex - 1 + currentGroup.length) % currentGroup.length; // Loop to the end if at the start
+  showCurrentImage();
+});
+
+// Close lightbox when clicking outside the image
+lightbox.addEventListener('click', (e) => {
+  if (e.target === lightbox) {
+    lightbox.style.display = 'none';
   }
 });
 
-// Show the image based on the current index
-function showImage(index) {
-  popupImage.src = images[index].src;
-}
+// JavaScript Example to Toggle Lightbox
 
-// Navigate to the previous image
-prevBtn.addEventListener('click', () => {
-  currentIndex = (currentIndex - 1 + images.length) % images.length;
-  showImage(currentIndex);
+galleryItems.forEach(item => {
+    item.addEventListener('click', () => {
+        lightbox.classList.add('active');
+    });
 });
 
-// Navigate to the next image
-nextBtn.addEventListener('click', () => {
-  currentIndex = (currentIndex + 1) % images.length;
-  showImage(currentIndex);
+closeBtn.addEventListener('click', () => {
+    lightbox.classList.remove('active');
 });
-
-
-// Open popup with the clicked image
-images.forEach((image, index) => {
-  image.addEventListener('click', () => {
-    currentIndex = index;
-    showImage(currentIndex);
-    popup.classList.add('show');
-  });
-});
-
-// Close the popup
-closePopup.addEventListener('click', () => {
-  popup.classList.remove('show');
-});
-
-
-
-
-
