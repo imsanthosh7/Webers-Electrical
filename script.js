@@ -156,28 +156,79 @@ closeBtn.addEventListener('click', () => {
   lightbox.style.display = 'none';
 });
 
-// Show the current image
-function showCurrentImage() {
-  lightboxGroup.innerHTML = ''; // Clear existing content
+document.addEventListener('keydown', (event) => {
+  if (event.key === 'Escape') {
+    lightbox.style.display = 'none';
+  }
+})
 
+
+// Show the current image with spinner using async/await
+async function showCurrentImage() {
+  lightboxGroup.innerHTML = '';
+
+  const spinner = document.createElement('div');
+  spinner.classList.add('loader');
+  spinner.style.display = 'inline-block';
+  lightboxGroup.appendChild(spinner);
+
+  // Create the image
   const img = document.createElement('img');
   img.src = currentGroup[currentIndex];
   img.alt = `Image ${currentIndex + 1}`;
   img.classList.add('lightbox-image');
+  img.style.display = 'none';
+
+  try {
+    await loadImage(img);
+    spinner.remove();
+    img.style.display = 'block';
+  } catch (error) {
+    console.error('Error loading image:', error);
+    spinner.textContent = 'Failed to load image';
+  }
+
   lightboxGroup.appendChild(img);
 }
 
+// Helper function to load the image
+function loadImage(image) {
+  return new Promise((resolve, reject) => {
+    image.onload = () => resolve();
+    image.onerror = () => reject(new Error('Image failed to load'));
+  });
+}
+
+
+
 // Show next image
 nextBtn.addEventListener('click', () => {
-  currentIndex = (currentIndex + 1) % currentGroup.length; 
+  currentIndex = (currentIndex + 1) % currentGroup.length;
   showCurrentImage();
 });
 
+
+document.addEventListener('keydown', (event) => {
+  if (event.key === 'ArrowRight') {
+    currentIndex = (currentIndex + 1) % currentGroup.length;
+    showCurrentImage();
+  }
+})
+
 // Show previous image
 prevBtn.addEventListener('click', () => {
-  currentIndex = (currentIndex - 1 + currentGroup.length) % currentGroup.length; // Loop to the end if at the start
+  currentIndex = (currentIndex - 1 + currentGroup.length) % currentGroup.length;
   showCurrentImage();
 });
+
+document.addEventListener('keydown', (event) => {
+  if (event.key === 'ArrowLeft') {
+    currentIndex = (currentIndex - 1 + currentGroup.length) % currentGroup.length;
+    showCurrentImage();
+  }
+})
+
+
 
 // Close lightbox when clicking outside the image
 lightbox.addEventListener('click', (e) => {
@@ -186,14 +237,14 @@ lightbox.addEventListener('click', (e) => {
   }
 });
 
-// JavaScript Example to Toggle Lightbox
 
+// JavaScript Example to Toggle Lightbox
 galleryItems.forEach(item => {
-    item.addEventListener('click', () => {
-        lightbox.classList.add('active');
-    });
+  item.addEventListener('click', () => {
+    lightbox.classList.add('active');
+  });
 });
 
 closeBtn.addEventListener('click', () => {
-    lightbox.classList.remove('active');
+  lightbox.classList.remove('active');
 });
