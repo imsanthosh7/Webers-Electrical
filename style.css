@@ -260,7 +260,7 @@ body {
         align-items: center;
         width: 500%;
         gap: 30px;
-        animation: scrollRight 23s linear infinite !important;
+        animation: scrollRight 40s linear infinite !important;
     }
 
     .logo-scroll-left {
@@ -268,7 +268,7 @@ body {
         align-items: center;
         width: 500%;
         gap: 30px;
-        animation: scrollLeft 23s linear infinite !important;
+        animation: scrollLeft 40s linear infinite !important;
     }
 
     .testimonial-cards {
@@ -337,9 +337,6 @@ body {
         font-size: 1.8rem !important;
     }
 
-    .image-popup img {
-        /* max-width: 78% !important; */
-    }
 
     .lightbox img {
         max-width: 330px !important;
@@ -394,6 +391,7 @@ body {
     width: 100%;
     height: 90vh;
     position: relative;
+    
 }
 
 .swiper-slide {
@@ -403,6 +401,7 @@ body {
     position: relative;
     width: 100%;
     height: 100%;
+  
 
 }
 
@@ -670,7 +669,6 @@ ul li i {
     position: absolute;
     top: 0;
     width: 100px;
-    /* Adjust the width of the gradient */
     height: 100%;
     z-index: 1;
 }
@@ -690,7 +688,8 @@ ul li i {
     display: flex;
     align-items: center;
     gap: 40px;
-    animation: scrollRight 23s linear infinite;
+    width: 3000px;
+    animation: scrollRight 50s linear infinite;
 
 }
 
@@ -721,10 +720,9 @@ ul li i {
 .logo-scroll-left {
     display: flex;
     align-items: center;
-
+    width: 3000px;
     gap: 40px;
-    /* Space between logos */
-    animation: scrollLeft 23s linear infinite;
+    animation: scrollLeft 50s linear infinite;
 }
 
 @keyframes scrollLeft {
@@ -1131,7 +1129,7 @@ ul li i {
 .lightbox-group {
     display: flex;
     gap: 10px;
-    
+
 }
 
 .lightbox img {
@@ -1145,6 +1143,7 @@ ul li i {
         opacity: 0;
         transform: scale(0.9);
     }
+
     to {
         opacity: 1;
         transform: scale(1);
@@ -1217,7 +1216,7 @@ ul li i {
 .gallery-item {
     display: block;
     transition: transform 0.3s ease;
-    z-index: 2; 
+    z-index: 2;
     position: relative;
 }
 
@@ -1233,30 +1232,30 @@ ul li i {
     padding: 10px 20px;
     border-radius: 4px;
     opacity: 0;
-    z-index: 10; 
+    z-index: 10;
     transition: opacity 0.3s ease;
     width: 100%;
     height: 100%;
     justify-content: center;
     align-items: center;
     transition: transform 0.3s ease;
-    
+
 }
 
-.overlay-text span i{
+.overlay-text span i {
     font-size: 28px;
     color: #efefef;
-   
+
 }
 
 
 .image-container:hover .gallery-item {
-    transform: scale(1.1); 
+    transform: scale(1.1);
 }
 
 .image-container:hover .overlay-text {
     opacity: 2;
-  
+
 }
 
 
@@ -1265,22 +1264,23 @@ ul li i {
     width: 48px;
     height: 48px;
     border-radius: 50%;
-    display:none;
+    display: none;
     border-top: 3px solid #FFF;
     border-right: 3px solid transparent;
     box-sizing: border-box;
     animation: rotation 1s linear infinite;
-    
-  }
-  
-  @keyframes rotation {
+
+}
+
+@keyframes rotation {
     0% {
-      transform: rotate(0deg);
+        transform: rotate(0deg);
     }
+
     100% {
-      transform: rotate(360deg);
+        transform: rotate(360deg);
     }
-  } 
+}
 
 
 /* contact page section  */
@@ -1499,5 +1499,3 @@ ul li i {
 .Btn:active {
     transform: translate(2px, 2px);
 }
-
-
