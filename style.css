@@ -1134,6 +1134,7 @@ ul li i {
 .lightbox-group {
     display: flex;
     gap: 10px;
+    
 
 }
 
@@ -1223,6 +1224,7 @@ ul li i {
     transition: transform 0.3s ease;
     z-index: 2;
     position: relative;
+    
 }
 
 .overlay-text {
