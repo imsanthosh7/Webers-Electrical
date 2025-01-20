@@ -1343,6 +1343,7 @@ ul li i {
     font-size: 16px;
     font-weight: 600;
     color: var(--rt-color-black);
+    text-decoration: none;
 }
 
 .contact-social-link a {
@@ -1506,3 +1507,5 @@ ul li i {
 .Btn:active {
     transform: translate(2px, 2px);
 }
+
+

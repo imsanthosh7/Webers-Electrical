@@ -2,6 +2,8 @@
 const goToTopButton = document.getElementById('go-to-top');
 
 
+
+
 window.addEventListener('scroll', () => {
   if (window.scrollY > 300) {
     goToTopButton.style.display = 'flex';
@@ -26,6 +28,8 @@ document.querySelectorAll('.nav-link').forEach(link => {
     this.classList.add('active-custom');
   });
 });
+
+
 
 
 // swiper 
@@ -248,3 +252,9 @@ galleryItems.forEach(item => {
 closeBtn.addEventListener('click', () => {
   lightbox.classList.remove('active');
 });
+
+
+
+
+
+
