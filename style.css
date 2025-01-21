@@ -1236,6 +1236,7 @@ ul li i {
     font-size: 24px;
     color: #efefef;
     background-color: rgba(0, 0, 0, 0.6);
+    /* background: linear-gradient(180deg, rgba(0, 0, 0, 0.55) 0%, rgba(0, 61, 91, 0.65) 80%); */
     padding: 10px 20px;
     border-radius: 4px;
     opacity: 0;
@@ -1256,11 +1257,11 @@ ul li i {
 }
 
 
-.image-container:hover .gallery-item {
-    transform: scale(1.1);
+.image-container .gallery-item {
+    transform: scale(01);
 }
 
-.image-container:hover .overlay-text {
+.image-container .overlay-text {
     opacity: 2;
 
 }
@@ -1507,5 +1508,16 @@ ul li i {
 .Btn:active {
     transform: translate(2px, 2px);
 }
+
+.addplussymbol::after {
+    content: "+";
+    margin-left: 2px; 
+    font-size: inherit; 
+    color: inherit;
+}
+
+
+
+
 
 
