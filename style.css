@@ -379,7 +379,17 @@ body {
     }
 
     swiper-container{
-        width: 330px !important;
+        width: 360px !important;
+        height: 270px !important;
+    }
+
+    .scroll-btn{
+        display: none !important;
+    }
+
+    .card-container {
+        /* display: flex; */
+        flex-direction: column !important;
     }
 
     .overlay-text {
@@ -1528,7 +1538,10 @@ ul li i {
 
 
 
-
+.card-container > * {
+    flex: 0 0 auto; 
+    min-width: 500px; 
+  }
 
 swiper-container {
     width: 500px;
@@ -1570,6 +1583,7 @@ swiper-slide img {
     padding: 20px;
     overflow-x: auto;
     scroll-behavior: smooth;
+    align-items: center;
 }
 
 .card-container::-webkit-scrollbar {
