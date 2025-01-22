@@ -254,6 +254,7 @@ closeBtn.addEventListener('click', () => {
 });
 
 
+// project swiper 
 const cardContainer = document.getElementById("cardContainer");
 const scrollLeftBtn = document.getElementById("scrollLeft");
 const scrollRightBtn = document.getElementById("scrollRight");
