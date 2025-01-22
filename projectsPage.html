@@ -128,8 +128,8 @@
         </div>
 
         <!-- project thumbnail -->
-        <div class="row gy-4 mx-auto justify-content-evenly">
-            <!-- First Image -->
+        <!-- <div class="row gy-4 mx-auto justify-content-evenly">
+           
             <div class="col-lg-6 col-md-6 col-sm-12 text-center">
                 <div class="image-container">
                     <img src="images/industrial-2.jpg" alt="Image 1" class="gallery-item img-fluid shadow"
@@ -142,7 +142,7 @@
                 
             </div>
 
-            <!-- Second Image -->
+            
             <div class="col-lg-6 col-md-6 col-sm-12 text-center">
                 <div class="image-container">
                     <img src="images/residential-3.jpg" alt="Image 1" class="gallery-item img-fluid shadow"
@@ -154,7 +154,7 @@
                 </div>
             </div>
 
-            <!-- Third Image -->
+            
             <div class="col-lg-6 col-md-6 col-sm-12 text-center">
                 <div class="image-container">
                     <img src="images/commercial-15.jpg" alt="Image 1" class="gallery-item img-fluid shadow"
@@ -167,7 +167,71 @@
             </div>
 
             
+        </div> -->
+
+        <div class="scroll-container">
+            <div class="card-container" id="cardContainer">
+                <!-- Swiper 1 -->
+                <swiper-container class="mySwiper" pagination="true" data-group="1">
+                    <swiper-slide><img src="images/industrial-2.jpg" alt=""></swiper-slide>
+                    <swiper-slide><img src="images/industrial-1.jpg" alt=""></swiper-slide>
+                    <swiper-slide><img src="images/industrial-3.jpg" alt=""></swiper-slide>
+                    <swiper-slide><img src="images/industrial-4.jpg" alt=""></swiper-slide>
+                    <swiper-slide><img src="images/industrial-5.jpg" alt=""></swiper-slide>
+                    <swiper-slide><img src="images/industrial-6.jpg" alt=""></swiper-slide>
+                    <swiper-slide><img src="images/industrial-7.jpg" alt=""></swiper-slide>
+                    <swiper-slide><img src="images/industrial-8.jpg" alt=""></swiper-slide>
+                    <swiper-slide><img src="images/industrial-9.jpg" alt=""></swiper-slide>
+                    <swiper-slide><img src="images/industrial-10.jpg" alt=""></swiper-slide>
+
+
+                </swiper-container>
+
+                <!-- Swiper 2 -->
+                <swiper-container class="mySwiper" pagination="true">
+                    <swiper-slide><img src="images/commercial-1.jpg" alt=""></swiper-slide>
+                    <swiper-slide><img src="images/commercial-2.jpg" alt=""></swiper-slide>
+                    <swiper-slide><img src="images/commercial-3.jpg" alt=""></swiper-slide>
+                    <swiper-slide><img src="images/commercial-4.jpg" alt=""></swiper-slide>
+                    <swiper-slide><img src="images/commercial-5.jpg" alt=""></swiper-slide>
+                    <swiper-slide><img src="images/commercial-6.jpg" alt=""></swiper-slide>
+                    <swiper-slide><img src="images/commercial-7.jpg" alt=""></swiper-slide>
+                    <swiper-slide><img src="images/commercial-8.jpg" alt=""></swiper-slide>
+                    <swiper-slide><img src="images/commercial-9.jpg" alt=""></swiper-slide>
+                    <swiper-slide><img src="images/commercial-10.jpg" alt=""></swiper-slide>
+                    <swiper-slide><img src="images/commercial-11.jpg" alt=""></swiper-slide>
+                    <swiper-slide><img src="images/commercial-12.jpg" alt=""></swiper-slide>
+                    <swiper-slide><img src="images/commercial-14.jpg" alt=""></swiper-slide>
+                    <swiper-slide><img src="images/commercial-15.jpg" alt=""></swiper-slide>
+                    <swiper-slide><img src="images/commercial-16.jpg" alt=""></swiper-slide>
+                    <swiper-slide><img src="images/commercial-17.jpg" alt=""></swiper-slide>
+                    <swiper-slide><img src="images/commercial-18.jpg" alt=""></swiper-slide>
+                </swiper-container>
+
+                <!-- Swiper 3 -->
+                <swiper-container class="mySwiper" pagination="true">
+                    <swiper-slide><img src="images/residential-1.jpg" alt=""></swiper-slide>
+                    <swiper-slide><img src="images/residential-2.jpg" alt=""></swiper-slide>
+                    <swiper-slide><img src="images/residential-3.jpg" alt=""></swiper-slide>
+                    <swiper-slide><img src="images/residential-4.jpg" alt=""></swiper-slide>
+                    <swiper-slide><img src="images/residential-5.jpg" alt=""></swiper-slide>
+                    <swiper-slide><img src="images/residential-6.jpg" alt=""></swiper-slide>
+                    <swiper-slide><img src="images/residential-7.jpg" alt=""></swiper-slide>
+                    <swiper-slide><img src="images/residential-8.jpg" alt=""></swiper-slide>
+                    <swiper-slide><img src="images/residential-9.jpg" alt=""></swiper-slide>
+                    <swiper-slide><img src="images/residential-10.jpg" alt=""></swiper-slide>
+                    <swiper-slide><img src="images/residential-11.jpg" alt=""></swiper-slide>
+                    <swiper-slide><img src="images/residential-12.jpg" alt=""></swiper-slide>
+                  
+                </swiper-container>
+            </div>
+            <!-- Scroll Buttons -->
+            <div class="scroll-buttons">
+                <button id="scrollLeft" class="scroll-btn"><i class="fa-solid fa-angle-left"></i></button>
+                <button id="scrollRight" class="scroll-btn"><i class="fa-solid fa-angle-right"></i></button>
+            </div>
         </div>
+
 
         <div class="lightbox" id="lightbox">
             <span class="loader"></span>
@@ -264,6 +328,7 @@
     </footer>
 
     <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"

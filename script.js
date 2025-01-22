@@ -254,6 +254,28 @@ closeBtn.addEventListener('click', () => {
 });
 
 
+const cardContainer = document.getElementById("cardContainer");
+const scrollLeftBtn = document.getElementById("scrollLeft");
+const scrollRightBtn = document.getElementById("scrollRight");
+
+// Scroll step size
+const scrollAmount = 300; 
+
+// Scroll left function
+scrollLeftBtn.addEventListener("click", () => {
+  cardContainer.scrollBy({
+    left: -scrollAmount,
+    behavior: "smooth",
+  });
+});
+
+// Scroll right function
+scrollRightBtn.addEventListener("click", () => {
+  cardContainer.scrollBy({
+    left: scrollAmount,
+    behavior: "smooth",
+  });
+});
 
 
 
