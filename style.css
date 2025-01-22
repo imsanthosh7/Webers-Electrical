@@ -910,6 +910,7 @@ ul li i {
     color: var(--rt-color-white);
     font-size: 1.8rem;
     font-weight: 600;
+    text-transform: capitalize;
 }
 
 /* service content section */
@@ -1001,6 +1002,7 @@ ul li i {
     color: var(--rt-color-white);
     font-size: 1.8rem;
     font-weight: 600;
+    text-transform: capitalize;
 }
 
 
@@ -1144,7 +1146,7 @@ swiper-slide img {
     position: relative;
     width: 100%;
     overflow: hidden;
-    /* Hide scrollbar */
+    cursor: pointer;
 }
 
 /* Card container */
@@ -1162,6 +1164,43 @@ swiper-slide img {
     display: none;
     /* Hide scrollbar thumb */
 }
+
+
+
+
+
+
+.slide-content {
+    position: relative;
+    display: flex;
+    align-items: center;
+    
+    justify-content: center;
+    overflow: hidden;
+  }
+  
+  .slide-content img {
+    width: 100%;
+    height: 100%;
+    
+  }
+  
+  .slide-text {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    height: 100%;
+    color: var(--rt-color-white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.8rem; 
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    
+  }
+  
 
 /* Buttons container */
 .scroll-buttons {
@@ -1361,6 +1400,7 @@ swiper-slide img {
     color: var(--rt-color-white);
     font-size: 1.8rem;
     font-weight: 600;
+    text-transform: capitalize;
 }
 
 
@@ -1557,3 +1597,6 @@ swiper-slide img {
     font-size: inherit;
     color: inherit;
 }
+
+
+

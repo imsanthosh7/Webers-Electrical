@@ -124,7 +124,7 @@ let currentIndex = 0;
 
 // Predefined groups of images
 const groups = {
-  1: ['images/industrial-1.jpg', 'images/industrial-2.jpg', 'images/industrial-3.jpg',
+  1: ['images/industrial-2.jpg', 'images/industrial-1.jpg', 'images/industrial-3.jpg',
     'images/industrial-4.jpg', 'images/industrial-5.jpg', 'images/industrial-6.jpg',
     'images/industrial-7.jpg', 'images/industrial-8.jpg', 'images/industrial-9.jpg',
     'images/industrial-10.jpg',
@@ -281,3 +281,15 @@ scrollRightBtn.addEventListener("click", () => {
 
 
 
+document.querySelectorAll('.location').forEach(location => {
+  const icon = location.querySelector('.icon-wrapper');
+  const info = location.querySelector('.info');
+
+  icon.addEventListener('mouseenter', () => {
+      info.classList.remove('hidden');
+  });
+
+  icon.addEventListener('mouseleave', () => {
+      info.classList.add('hidden');
+  });
+});
