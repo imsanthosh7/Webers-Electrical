@@ -171,7 +171,7 @@ body {
     }
 
     .about-img img {
-        height: 60vh !important;
+        height: 30vh !important;
     }
 
     /* contact page  */
@@ -229,7 +229,8 @@ body {
     }
 
     .about-section img {
-        width: 350px !important;
+        width: 404px !important;
+        margin-bottom: 25px !important;
     }
 
     .about-section-content h3 {
@@ -241,6 +242,9 @@ body {
 
     }
 
+    .about-section img {
+        height: auto !important;
+    }
 
 
     .counter-head {
@@ -313,8 +317,10 @@ body {
     }
 
     .about-img img {
-        height: 50vh !important;
+        width: 100% !important;
+        height: 55vh !important;
     }
+    
 
     .about-banner-text h1 {
         font-size: 2rem !important;
@@ -547,11 +553,14 @@ body {
 
 .about-section img {
     width: 500px;
+
 }
 
 
 .about-img {
-    width: 500px !important;
+    /* width: 100% !important; */
+    margin-bottom: 21px;
+
 }
 
 .about-section-content h3 {
@@ -709,6 +718,9 @@ ul li i {
 
 }
 
+.logo-scroll:hover {
+    animation-play-state: paused !important;
+}
 
 
 .partner-logo {
@@ -716,6 +728,8 @@ ul li i {
     height: auto;
     flex-shrink: 0;
 }
+
+
 
 .small-logo {
     width: 60px;
@@ -739,6 +753,11 @@ ul li i {
     width: 3000px;
     gap: 40px;
     animation: scrollLeft 50s linear infinite;
+}
+
+.logo-scroll-left:hover {
+    animation-play-state: paused !important;
+    
 }
 
 @keyframes scrollLeft {
@@ -1009,8 +1028,8 @@ ul li i {
 
 
 .about-img img {
-    width: 100%;
-    height: 75vh;
+    width: 90%;
+    height: 395px;
     object-fit: cover;
 }
 
@@ -1176,18 +1195,18 @@ swiper-slide img {
     position: relative;
     display: flex;
     align-items: center;
-    
+
     justify-content: center;
     overflow: hidden;
-  }
-  
-  .slide-content img {
+}
+
+.slide-content img {
     width: 100%;
     height: 100%;
-    
-  }
-  
-  .slide-text {
+
+}
+
+.slide-text {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -1196,13 +1215,13 @@ swiper-slide img {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1.8rem; 
+    font-size: 1.8rem;
     font-weight: bold;
     background-color: rgba(0, 0, 0, 0.5);
     text-align: center;
-    
-  }
-  
+
+}
+
 
 /* Buttons container */
 .scroll-buttons {
@@ -1599,6 +1618,3 @@ swiper-slide img {
     font-size: inherit;
     color: inherit;
 }
-
-
-

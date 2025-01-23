@@ -39,7 +39,7 @@ document.addEventListener("DOMContentLoaded", function () {
     spaceBetween: 30,
     centeredSlides: true,
     autoplay: {
-      delay: 2400,
+      delay: 2800,
       disableOnInteraction: false,
     },
     pagination: {
