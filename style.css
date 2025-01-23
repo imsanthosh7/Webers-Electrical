@@ -229,7 +229,7 @@ body {
     }
 
     .about-section img {
-        width: 404px !important;
+        width: 100% !important;
         margin-bottom: 25px !important;
     }
 
@@ -244,6 +244,7 @@ body {
 
     .about-section img {
         height: auto !important;
+        
     }
 
 
