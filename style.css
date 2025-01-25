@@ -442,7 +442,7 @@ body {
 }
 
 .container__text {
-    width: 100%;
+    width: 100vw;
     height: 150vh;
     position: absolute;
     margin-top: 58px;

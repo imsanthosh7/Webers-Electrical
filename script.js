@@ -18,36 +18,36 @@ goToTopButton.addEventListener('click', () => {
 
 
 
-const ScrollRevealOptions = {
-  distance: "50px",
-  origin: "left",
-  duration: 1200,
-}
+// const ScrollRevealOptions = {
+//   distance: "50px",
+//   origin: "left",
+//   duration: 1200,
+// }
 
-const ScrollRevealOptions_1 = {
-  distance: "50px",
-  origin: "right",
-  duration: 1200,
-}
+// const ScrollRevealOptions_1 = {
+//   distance: "50px",
+//   origin: "right",
+//   duration: 1200,
+// }
 
-const ScrollRevealOption = {
-  distance: "50px",
-  origin: "bottom",
-  duration: 1300,
-}
+// const ScrollRevealOption = {
+//   distance: "50px",
+//   origin: "bottom",
+//   duration: 1300,
+// }
 
-ScrollReveal().reveal(".right", {
-  ...ScrollRevealOptions_1
-})
+// ScrollReveal().reveal(".right", {
+//   ...ScrollRevealOptions_1
+// })
 
-ScrollReveal().reveal(".left", {
-  ...ScrollRevealOptions
-})
+// ScrollReveal().reveal(".left", {
+//   ...ScrollRevealOptions
+// })
 
-ScrollReveal().reveal(".up", {
-  ...ScrollRevealOption,
-  interval: 100,
-})
+// ScrollReveal().reveal(".up", {
+//   ...ScrollRevealOption,
+//   interval: 100,
+// })
 
 
 // navlink active 
