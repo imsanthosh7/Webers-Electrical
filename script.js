@@ -1,9 +1,6 @@
 // Go to Top button
 const goToTopButton = document.getElementById('go-to-top');
 
-
-
-
 window.addEventListener('scroll', () => {
   if (window.scrollY > 300) {
     goToTopButton.style.display = 'flex';
@@ -18,6 +15,39 @@ goToTopButton.addEventListener('click', () => {
     behavior: 'smooth'
   });
 });
+
+
+
+const ScrollRevealOptions = {
+  distance: "50px",
+  origin: "left",
+  duration: 1200,
+}
+
+const ScrollRevealOptions_1 = {
+  distance: "50px",
+  origin: "right",
+  duration: 1200,
+}
+
+const ScrollRevealOption = {
+  distance: "50px",
+  origin: "bottom",
+  duration: 1300,
+}
+
+ScrollReveal().reveal(".right", {
+  ...ScrollRevealOptions_1
+})
+
+ScrollReveal().reveal(".left", {
+  ...ScrollRevealOptions
+})
+
+ScrollReveal().reveal(".up", {
+  ...ScrollRevealOption,
+  interval: 100,
+})
 
 
 // navlink active 
@@ -53,27 +83,30 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-
-// animateCounters function 
-
+// animation number Counter
 function animateCounters() {
   const counters = document.querySelectorAll('.counter');
-  const animationDuration = 2000;
+  const animationDuration = 2000; // Total duration for the animation in milliseconds
 
   counters.forEach(counter => {
     const targetValue = parseInt(counter.getAttribute('data-target'), 10);
-    const increment = Math.ceil(targetValue / (animationDuration / 16));
+    const startValue = 0;
+    const frameRate = 60; 
+    const totalFrames = Math.round((animationDuration / 1000) * frameRate);
+    const increment = targetValue / totalFrames;
 
-    let currentValue = 0;
+    let currentValue = startValue;
+    let frame = 0;
 
     const updateCounter = () => {
-      currentValue += increment;
+      frame++;
+      currentValue = Math.min(currentValue + increment, targetValue);
+      counter.textContent = Math.floor(currentValue);
 
-      if (currentValue >= targetValue) {
-        counter.textContent = targetValue;
-      } else {
-        counter.textContent = currentValue;
+      if (frame < totalFrames) {
         requestAnimationFrame(updateCounter);
+      } else {
+        counter.textContent = targetValue; 
       }
     };
 
@@ -103,9 +136,18 @@ window.addEventListener('scroll', handleScroll);
 // preloder 
 window.onload = function () {
   const preloader = document.getElementById('preloader');
+  const animatedTexts = document.querySelectorAll('.text-slide'); 
+
   setTimeout(() => {
-    preloader.classList.add('hidden');
-  }, 1200)
+    preloader.classList.add('hidden'); 
+
+    // Trigger the animation after the preloader is hidden
+    animatedTexts.forEach((text, index) => {
+      setTimeout(() => {
+        text.classList.add('start-animation');
+      }, index * 20); // Optional delay for staggered effect
+    });
+  }, 1200); // Match preloader display duration
 };
 
 
@@ -260,7 +302,7 @@ const scrollLeftBtn = document.getElementById("scrollLeft");
 const scrollRightBtn = document.getElementById("scrollRight");
 
 // Scroll step size
-const scrollAmount = 300; 
+const scrollAmount = 300;
 
 // Scroll left function
 scrollLeftBtn.addEventListener("click", () => {
@@ -280,16 +322,3 @@ scrollRightBtn.addEventListener("click", () => {
 
 
 
-
-document.querySelectorAll('.location').forEach(location => {
-  const icon = location.querySelector('.icon-wrapper');
-  const info = location.querySelector('.info');
-
-  icon.addEventListener('mouseenter', () => {
-      info.classList.remove('hidden');
-  });
-
-  icon.addEventListener('mouseleave', () => {
-      info.classList.add('hidden');
-  });
-});

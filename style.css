@@ -83,11 +83,13 @@ body {
     font-size: 14px;
     font-weight: 500;
     transition: color 0.2s ease-in;
+   
 }
 
 
 .location a:hover {
     color: var(--rt-color-secondPrimary);
+    
 }
 
 
@@ -153,6 +155,19 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+
+.container-text-content {
+    transform: translateY(70%);
+    opacity: 0;
+    transition: transform 0.6s ease-out, opacity 0.6s ease-out;
+}
+
+
+.swiper-slide-active .container-text-content {
+    transform: translateY(0);
+    opacity: 1;
 }
 
 @media (max-width: 999px) {
@@ -244,7 +259,7 @@ body {
 
     .about-section img {
         height: auto !important;
-        
+
     }
 
 
@@ -321,7 +336,7 @@ body {
         width: 100% !important;
         height: 55vh !important;
     }
-    
+
 
     .about-banner-text h1 {
         font-size: 2rem !important;
@@ -427,10 +442,10 @@ body {
 }
 
 .container__text {
-    width: 100vw;
+    width: 100%;
     height: 150vh;
     position: absolute;
-    margin-top: 140px;
+    margin-top: 58px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -758,7 +773,7 @@ ul li i {
 
 .logo-scroll-left:hover {
     animation-play-state: paused !important;
-    
+
 }
 
 @keyframes scrollLeft {
@@ -933,6 +948,25 @@ ul li i {
     font-size: 1.8rem;
     font-weight: 600;
     text-transform: capitalize;
+}
+
+.text-slide {
+    transform: translateX(-100%);
+    opacity: 0;
+    display: inline-block;
+    transition: transform 0.8s ease-out, opacity 0.8s ease-out;
+}
+
+
+.text-slide.start-animation {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+
+.service-banner-text {
+    text-align: left;
+    padding: 20px;
 }
 
 /* service content section */
@@ -1619,3 +1653,28 @@ swiper-slide img {
     font-size: inherit;
     color: inherit;
 }
+
+
+
+
+
+
+/* .block {
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 30%;
+}
+
+
+@keyframes appear {
+    from {
+        opacity: 0;
+        scale: 0.8;
+    }
+
+    to {
+        opacity: 1;
+        scale: 1;
+        
+    }
+} */
