@@ -35,7 +35,7 @@ body {
     --rt-color-white: #fbfafa;
     --rt-color-black: #585858;
     --rt-color-primary: #003d5b;
-    --rt-color-secondPrimary: rgb(249, 75, 22);
+    --rt-color-secondPrimary: #f94b16;
     --rt-color-text-light: #7d7d7d;
     --rt-color-bg: #022a3d;
 }
@@ -920,7 +920,7 @@ ul li i {
     transition: all 0.1s ease-in-out;
 }
 
-.footer-add:hover {
+.footer-add a p:hover {
     color: var(--rt-color-secondPrimary);
     transition: all 0.1s ease-in-out;
 }
@@ -1673,7 +1673,11 @@ swiper-slide img {
 }
 
 
-
+.dev-name p span a{
+    text-decoration: none;
+    color: inherit;
+    
+}
 
 
 
