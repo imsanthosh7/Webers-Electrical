@@ -146,7 +146,8 @@ body {
 /* Second (sub-navbar) */
 .sub-nav {
     position: fixed;
-    top: 92px;
+    top: 81px;
+    /* top: 92px; */
     width: 100%;
     z-index: 999;
 }
@@ -1542,7 +1543,7 @@ swiper-slide img {
 }
 
 /* Rotation animation */
-@keyframes rotate {
+/* @keyframes rotate {
     0% {
         transform: rotate(0deg);
     }
@@ -1550,7 +1551,7 @@ swiper-slide img {
     100% {
         transform: rotate(360deg);
     }
-}
+} */
 
 #preloader {
     opacity: 1;
