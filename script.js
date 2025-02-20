@@ -131,7 +131,7 @@ window.onload = function () {
         text.classList.add('start-animation');
       }, index * 20); // Optional delay for staggered effect
     });
-  }, 1300); // Match preloader display duration
+  }, 600); // Match preloader display duration
 };
 
 

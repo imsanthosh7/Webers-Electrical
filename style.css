@@ -12,6 +12,10 @@
     scroll-behavior: smooth;
 }
 
+html {
+    scroll-padding-top: 163px;
+}
+
 
 @font-face {
     font-family: logofont;
@@ -44,7 +48,8 @@ body {
 /* navbar section  */
 
 .logo-section img {
-    width: 60px;
+    width: 53px;
+    height: 63px;
     margin-right: -8px;
 }
 
@@ -1544,11 +1549,11 @@ swiper-slide img {
 .preloader-logo {
     width: 120px;
     height: auto;
-    /* animation: rotate 2s linear infinite; */
+    animation: rotate 2s linear infinite;
 }
 
 /* Rotation animation */
-/* @keyframes rotate {
+@keyframes rotate {
     0% {
         transform: rotate(0deg);
     }
@@ -1556,7 +1561,7 @@ swiper-slide img {
     100% {
         transform: rotate(360deg);
     }
-} */
+}
 
 #preloader {
     opacity: 1;
@@ -1679,10 +1684,10 @@ swiper-slide img {
 }
 
 
-.dev-name p span a{
+.dev-name p span a {
     text-decoration: none;
     color: inherit;
-    
+
 }
 
 
