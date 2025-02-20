@@ -75,7 +75,7 @@ function animateCounters() {
   counters.forEach(counter => {
     const targetValue = parseInt(counter.getAttribute('data-target'), 10);
     const startValue = 0;
-    const frameRate = 60; 
+    const frameRate = 60;
     const totalFrames = Math.round((animationDuration / 1000) * frameRate);
     const increment = targetValue / totalFrames;
 
@@ -90,7 +90,7 @@ function animateCounters() {
       if (frame < totalFrames) {
         requestAnimationFrame(updateCounter);
       } else {
-        counter.textContent = targetValue; 
+        counter.textContent = targetValue;
       }
     };
 
@@ -120,10 +120,10 @@ window.addEventListener('scroll', handleScroll);
 // preloder 
 window.onload = function () {
   const preloader = document.getElementById('preloader');
-  const animatedTexts = document.querySelectorAll('.text-slide'); 
+  const animatedTexts = document.querySelectorAll('.text-slide');
 
   setTimeout(() => {
-    preloader.classList.add('hidden'); 
+    preloader.classList.add('hidden');
 
     // Trigger the animation after the preloader is hidden
     animatedTexts.forEach((text, index) => {
@@ -131,7 +131,7 @@ window.onload = function () {
         text.classList.add('start-animation');
       }, index * 20); // Optional delay for staggered effect
     });
-  }, 600); // Match preloader display duration
+  }, 500); // Match preloader display duration
 };
 
 
